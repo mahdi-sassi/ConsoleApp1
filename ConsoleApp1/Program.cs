@@ -25,6 +25,10 @@ namespace ConsoleApp1
             //Console.ReadLine();
             /**************
             **/
+
+
+
+            /* Example months
             Example example = new Example();
             example.Month = new List<string>();
             example.Month.Add("Janvier");
@@ -39,13 +43,18 @@ namespace ConsoleApp1
             example.Month.Add("Octobre");
             example.Month.Add("Novembre");
             example.Month.Add("Décembre");
-            IEnumerable<string> iEnumerableOfString = (IEnumerable<string>)example.Month;
-            foreach (string element in example.Month)
+            IEnumerator<string> iEnumerableOfString = example.Month.GetEnumerator();
+            while (iEnumerableOfString.MoveNext())
             {
-                Console.WriteLine(element);
+                Console.WriteLine(iEnumerableOfString.Current);
                 Console.ReadLine();
 
-            }
+            }*/
+
+
+
+
+
         }
     }
 }
